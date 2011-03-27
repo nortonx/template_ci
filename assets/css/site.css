@@ -1,0 +1,83 @@
+body {
+	background-color: #D0D0D0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+
+#header {
+	height: 100px;
+	background-color: #143270;
+	color: #bbbbbb;
+}
+
+#menu {
+	background-color: #729FCF;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #444444;
+}
+
+#content {
+	min-height: 90%;
+	max-height: 100%;
+	
+}
+
+.error {
+	border: 1px solid red;
+	background-color: #D0D0D0;
+	padding: 4px;
+}
+
+#footer {
+	height: 40px;
+	background-color: #143270;
+	color: #bbbbbb;
+	font-size: 0.7em;
+}
+
+/* form elements */
+
+#form_login {
+	width: 300px;
+	margin: 10px auto;
+	border: 1px solid white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.row {
+    width: 280px;
+	display: block;
+	line-height: 24px;
+	margin: 8px auto;
+	padding: 0;
+    text-align: center;
+}
+
+.row label {
+    width: 100px;
+    margin: 0 10px;
+    height: 24px;
+    font-family: Verdana,Arial, Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.row input[type=text], input[type=password] {
+    margin-right: 0;
+    float: right;
+}
+
+input[type=text], input[type=password] {
+	width: 180px;
+	background-color: #eeeeee;
+	border: 1px solid;
+	border-color: #729FCF;
+	height: 20px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 0.9em;
+}

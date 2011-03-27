@@ -1,0 +1,16 @@
+table {
+    width: 96%;
+	border-collapse: collapse;
+	border: 2px solid #999;
+	margin: 0 auto;
+}
+
+tr td, tr th {
+	padding: 1px 5px;
+	text-align: left;
+	border: 1px dotted #333;
+}
+
+.par {
+	background-color: #cccccc;
+}

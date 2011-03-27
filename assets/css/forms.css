@@ -1,0 +1,157 @@
+
+
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* form layout */
+
+input,
+textarea {
+	border: 1px solid #bbbbbb;
+	padding: 2px;
+	width: 260px;
+}
+
+textarea {
+    height: 60px;
+}
+
+input[type=radio] {
+	border: none;
+	display: inline;
+	width: 20px;
+}
+
+input[type=checkbox] {
+	border: none;
+	display: inline;
+	width: 20px;
+}
+
+input[type=button] {
+	width: 90px;
+}
+
+input[type=submit] {
+	width: 90px;
+}
+
+textarea {
+	height: 100px;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+fieldset h2 {
+	font-size: 1.05em;
+	border-bottom: 1px solid;
+	font-weight: bold;
+    padding-left: 4px;
+	margin-bottom: 8px;
+}
+
+fieldset hr {
+	height: 1px;
+}
+
+fieldset {
+	border: 1px solid #c4c4c4;
+	padding: 6px;
+}
+
+fieldset div {
+	margin: 0 0 3px 160px;
+}
+
+fieldset div label,
+fieldset div label div {
+	line-height: 1;
+	margin: 4px 20px 0 -160px;
+	width: 160px;
+	float: left;
+	text-align: right;
+}
+
+fieldset div input,
+fieldset div textarea,
+fieldset div select {
+	display: block;
+	line-height: 1;
+}
+
+fieldset div select {
+	width: 160px;
+}
+
+/* textField formatting */
+.textField {
+	border: solid 1px #e0e0e0;
+}
+
+.textField .long {
+	width: 400px;
+}
+.textField .medium {
+	width: 300px;
+}
+.textField .short {
+	width: 160px;
+}
+
+.date {
+	width: 90px;
+	display: inline;
+	margin-right: 1px;
+}
+
+.intro {
+	padding: 8px;
+	margin: 4px;
+	background-color: #FDF5CE;
+	color: #729FCF;
+	border: 1px solid #FECA40;
+}
+
+label abbr.obrigatorio {
+	color: red;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 1.2em;
+    font-family: monospace;
+}
+
+ul#icon_edu li {
+	width: 1.4em;
+}
+/* login form */
+
+
+/* error */
+fieldset div#error {
+	border: 1px solid red;
+	padding: 4px;
+	background-color: #FDF5CE;
+	margin: 0;
+	display: none;
+}
+
+.errorMessage {
+    display:none;
+}
+
+.showErrorMessage {
+    display:block;
+    color: red;
+    background-color: #FFCCCC;
+    border: 1px solid red;
+    margin: 2px 20px 2px 20px;
+    padding-left: 4px;
+    width: 260px;
+    line-height: 1.4em; 
+        
+}
