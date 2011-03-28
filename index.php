@@ -1,5 +1,5 @@
 <?php
-
+define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
  * PHP ERROR REPORTING LEVEL
