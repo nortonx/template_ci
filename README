@@ -4,7 +4,7 @@ This project includes:
 
 -CodeIgniter Reactor 2.0;
 -jQuery 1.4.4
--jQuery UI 1.8.10 (with themes: blitzer, sunny and ui-lightness)
+-jQuery UI 1.8.10 (with themes: blitzer)
 -960gs CSS Framework
 
 I only made this to help me with a standard setup for simple web projects using those frameworks.
