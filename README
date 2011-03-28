@@ -1,11 +1,19 @@
 
 
+Hi, my name is Norton and I am a web developper.
+The kind of work available for me here in my town is kinda boring and go
+agains the DRY principles. So, I Downloaded the CodeIgniter Reactor 2, the most
+stable jQuery Library and jQueryUI as well, plus, the CKEditor and the super 960gs.
+
+Thanks for Nathan Smith
+
 This project includes:
 
--CodeIgniter Reactor 2.0;
+-CodeIgniter Reactor 2.0.1;
 -jQuery 1.4.4
--jQuery UI 1.8.10 (with themes: blitzer)
--960gs CSS Framework
+-jQuery UI 1.8.10 (with themes: blitzer, sunny, ui-lightness);
+-960gs CSS Framework;
+-CKEditor; 
 
 I only made this to help me with a standard setup for simple web projects using those frameworks.
 
