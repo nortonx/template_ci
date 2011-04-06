@@ -11,11 +11,32 @@ body {
 	color: #bbbbbb;
 }
 
-#menu {
+#nav_menu {
 	background-color: #729FCF;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #444444;
+	height: 50px;
+}
+
+#nav_menu ul {
+	line-height: 30px;
+}
+
+#nav_menu ul li {
+	list-style: none;
+	padding: 4px;
+}
+
+#nav_menu a {
+	background-color: maroon;
+	color: white;
+	border:  1px solid #EEEEEE;
+	-moz-border-radius: 3px;
+	text-decoration: none;
+	float:left;
+	margin: 4px 10px;
+	padding: 2px 4px;
 }
 
 #content {
