@@ -17,6 +17,8 @@ class Login extends CI_Controller {
 	 */
 	function index()
 	{
+		$this->load->library('database');
+		
 		$data['title'] = 'Login - Área Restrita';
 		$data['action'] = base_url() . 'login/submit';
 		$data['message'] = 'Bem vindo';

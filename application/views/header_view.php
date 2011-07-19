@@ -26,5 +26,6 @@
 	<div id="header" class="grid_16">
 		Header
 	</div>
+	<div class="clear"></div>
 	
 		

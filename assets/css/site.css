@@ -1,3 +1,5 @@
+/* @override http://localhost/template_ci/assets/css/site.css */
+
 body {
 	background-color: #D0D0D0;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -11,32 +13,58 @@ body {
 	color: #bbbbbb;
 }
 
-#menu {
+#nav_menu {
 	background-color: #729FCF;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size: 14px;
 	color: #444444;
+	height: 40px;
+}
+
+#nav_menu li {
+	list-style: none;
+}
+
+#nav_menu a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 4px;
+	line-height: 38px;
+	margin: 0 auto;
+	background-color: maroon;
+	-moz-border-radius: 3px;
+	border: 1px solid #CCCCCC;
+}
+
+#nav_menu a:hover {
+	color: blue;
 }
 
 #content {
 	min-height: 90%;
 	max-height: 100%;
-	
+	border-left: 1px solid #5e5e5e;
+	border-right: 1px solid #5e5e5e;
 }
 
 .error {
 	border: 1px solid red;
 	background-color: #D0D0D0;
 	padding: 4px;
+	color: #f00;
 }
 
 #footer {
 	height: 40px;
 	background-color: #143270;
 	color: #bbbbbb;
-	font-size: 0.7em;
 }
 
+#footer p {
+	color: #BBBBBB;
+	text-align: center;
+	font-size: 0.7em;
+}
 /* form elements */
 
 #form_login {

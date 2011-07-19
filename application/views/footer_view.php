@@ -1,4 +1,7 @@
+	<div class="clear"></div>
 	<div id="footer" class="grid_16">
-		<p>Footer</p>
+		Footer
+		<p>Footer paragraph</p>
 	</div>
+
 </div>
