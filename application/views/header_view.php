@@ -25,6 +25,7 @@
 <div id="conteiner" class="container_16">
 	<div id="header" class="grid_16">
 		Header
+		<p>Header paragragh</p>
 	</div>
 	<div class="clear"></div>
 	
