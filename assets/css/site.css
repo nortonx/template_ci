@@ -17,6 +17,7 @@ body {
 	background-color: #729FCF;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #444444;
+<<<<<<< HEAD
 	height: 40px;
 }
 
@@ -38,6 +39,29 @@ body {
 
 #nav_menu a:hover {
 	color: blue;
+=======
+	height: 50px;
+}
+
+#nav_menu ul {
+	line-height: 30px;
+}
+
+#nav_menu ul li {
+	list-style: none;
+	padding: 4px;
+}
+
+#nav_menu a {
+	background-color: maroon;
+	color: white;
+	border:  1px solid #EEEEEE;
+	-moz-border-radius: 3px;
+	text-decoration: none;
+	float:left;
+	margin: 4px 10px;
+	padding: 2px 4px;
+>>>>>>> 3dda517245ad82fa8a721329651b5f048c11a085
 }
 
 #content {
