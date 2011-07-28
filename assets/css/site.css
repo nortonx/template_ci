@@ -24,8 +24,8 @@ body {
 	height: 40px;
 }
 
-#nav_menu li {
-	list-style: none;
+#nav_menu p {
+	line-height: 40px;
 }
 
 #nav_menu a {
@@ -33,32 +33,21 @@ body {
 	text-decoration: none;
 	text-align: center;
 	padding: 4px;
-	line-height: 38px;
+	line-height: 24px;
 	margin: 0 auto;
 	background-color: maroon;
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border: 1px solid #CCCCCC;
 }
 
-#nav_menu li a:hover {
-	color: blue;
-	height: 50px;
-}
 
-#nav_menu ul {
-	line-height: 30px;
-}
-
-#nav_menu ul li {
-	list-style: none;
-	padding: 4px;
-}
-
-#nav_menu ul li a {
+#nav_menu p a {
 	background-color: maroon;
 	color: white;
 	border:  1px solid #EEEEEE;
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	text-decoration: none;
 	float:left;
 	margin: 4px 10px;

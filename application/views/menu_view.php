@@ -1,14 +1,8 @@
 <div id="nav_menu" class="grid_16">
-    <ul>
-        <li>
-            <?php echo anchor('controller/action', 'Option1', 'title="teste1"'); ?>
-		</li>
-		<li>
-			<?php echo anchor('controller/action', 'Option2', 'title="teste1"'); ?>
-		</li>
-        <li>    
-        	<?php echo anchor('controller/action', 'Option2', 'title="teste1"'); ?>
-        </li>
-    </ul>
+	<p>
+		<?php echo anchor('controller/action', 'Option1', 'title="teste1"'); ?>
+		<?php echo anchor('controller/action', 'Option2', 'title="teste1"'); ?>
+		<?php echo anchor('controller/action', 'Option2', 'title="teste1"'); ?>
+	</p>
 </div>
 <div class="clear"></div>
