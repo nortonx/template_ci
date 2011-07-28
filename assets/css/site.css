@@ -13,6 +13,10 @@ body {
 	color: #bbbbbb;
 }
 
+#header p {
+	margin: 10px;
+}
+
 #nav_menu {
 	background-color: #729FCF;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -36,7 +40,7 @@ body {
 	border: 1px solid #CCCCCC;
 }
 
-#nav_menu a:hover {
+#nav_menu li a:hover {
 	color: blue;
 	height: 50px;
 }
@@ -50,7 +54,7 @@ body {
 	padding: 4px;
 }
 
-#nav_menu a {
+#nav_menu ul li a {
 	background-color: maroon;
 	color: white;
 	border:  1px solid #EEEEEE;
