@@ -58,8 +58,11 @@ body {
 #content {
 	min-height: 90%;
 	max-height: 100%;
-	border-left: 1px solid #5e5e5e;
-	border-right: 1px solid #5e5e5e;
+	background-color: gray;
+}
+
+#article {
+	padding: 20px;
 }
 
 .error {

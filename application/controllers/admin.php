@@ -22,5 +22,6 @@ class Admin extends CI_Controller {
 	{
 		
 		$data['title'] = 'Área restrita';
+		
 	}
 }
