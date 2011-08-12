@@ -8,7 +8,7 @@ class Login extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->helper('url', 'form');
+		$this->load->library('database');
 		$this->_validate_user();
 	}
 		
@@ -17,7 +17,7 @@ class Login extends CI_Controller {
 	 */
 	function index()
 	{
-		$this->load->library('database');
+		//$this->load->library('database');
 		
 		$data['title'] = 'Login - Área Restrita';
 		$data['action'] = base_url() . 'login/submit';
@@ -55,7 +55,7 @@ class Login extends CI_Controller {
 				);
 
 				$this->session->set_userdata($session_data);
-				redirect('admin/index');
+				redirect('admin/index', $session_data);
 				
 			} else {
 				// redirecionar para área restrita
