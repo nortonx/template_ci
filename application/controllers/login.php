@@ -15,7 +15,7 @@ class Login extends CI_Controller {
 	/**
 	 * Exibe formulário de login
 	 */
-	function index()
+	public function index()
 	{
 		//$this->load->library('database');
 		
@@ -30,69 +30,26 @@ class Login extends CI_Controller {
 				
 	}
 	
-	function submit()
-	{
-		// carrega 'model' do usuário
+	// Verifica se o usuário tem autorização para entrar no sistema.
+	public function validate_credentials() {
+		
 		$this->load->model('Usuario_model');
-
-		$this->form_validation->set_rules('username', 'Usuário', 'required');
-		$this->form_validation->set_rules('password', 'Senha', 'required');
+		$query = $this->Usuario_model->validate();
 		
-		
-		if( $this->form_validation->run() == FALSE ) {
+		if($query) {
+			$data = array(
+				'username' => $this->input->post('username'),
+				'is_logged_in' => true
+			);
 			
+			$this->session->set_userdata($data);
+			redirect('admin/inicio');
+		} else {
 			$this->index();
-			
-		} else {
-			
-			$query = $this->Usuario_model->login();
-
-			if( $query ) {
-
-				$session_data = array(
-					'username' => $this->input->post('username'),
-					'logged_in' => true
-				);
-
-				$this->session->set_userdata($session_data);
-				redirect('admin/index', $session_data);
-				
-			} else {
-				// redirecionar para área restrita
-				$this->index();
-			}				
 		}
-	}
-
-
-    function signup()
-    {
-        $data['title'] = 'Cadastro';
-        $data['action'] = 'login/do_signup';
-
-        $this->load->view('header_view', $data);
-        $this->load->view('login/signup', $data);
-        $this->load->view('footer_view');
-
-
-    }
-	/**
-	 * Valida o usuário de acordo com o nível de acesso.
-	 * admin = super
-	 * user = user
-	 */
-	private function _validate_user()
-	{
-		$logged = $this->session->userdata('logged_in');
-		
-		if( !isset($logged) || $logged != true ) {
-			return false;
-		} else {
-			return $logged; // or true?
-		}	
-	}
+	}	
 	
-	function logout()
+	public function logout()
 	{
 		$this->session->sess_destroy();
 		$this->index();		
