@@ -1,21 +1,20 @@
 <?php
 class Home extends CI_Controller {
 
-    function index()
+	public function __construct() {
+		parent::__construct();
+	}
+	
+    public function index()
     {
         $this->load->library('user_agent');
 
-        $data['title'] = 'Página/Controller inicial';
+        $data['title'] = 'Initial Controller';
         $data['action'] = 'none';
         $data['userdata'] = $this->agent->browser();
+		$data['main_content'] = 'home/index';
 
-        $this->load->view('header_view', $data);
-        $this->load->view('menu_view');
-        $this->load->view('home/index', $data);
-        $this->load->view('footer_view');
+		$this->load->view('includes/template', $data);
 
     }
-
-
-
 }
